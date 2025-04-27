@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    
+
+    <h1 id="title">Sondaggio particolare</h1>
+    <p  id="description">Grazie di tutta la vostra doverosa nonchè obbligatoria collaborazione</p>
+
+    <form method="post" id="survey-form" action="">
+        <fieldset>
+            <label id="name-label" for="nome">Name <input id="name" name="nome" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+            <label id="number-label" for="eta">Age(optional) <input id="number" name="eta" type="number" min="3" max="12" placeholder="Age"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Come giochi a calcio?</legend>
+            <label for="calcio">
+                <select name="calcio" id="dropdown">
+                    <option value="">(seleziona un'opzione)</option>
+                    <option value="1">Con i piedi</option>
+                    <option value="2">Con le mani</option>
+                    <option value="3">Con la testa</option>
+                    <option value="4">Con il petto</option>
+                    <option value="5">Senza gambe</option>
+                    <option value="6">Altro</option>
+                </select>
+            </label>
+            <legend>Il tuo peggior nemico è ...</legend>
+            <label for="noracsm">
+                <input id="bianco" name="noracsm" type="radio" value="white" class="inline">il tempo
+                <input id="nero" name="noracsm" type="radio" value="black" class="inline">te stesso
+                <input id="entrambi" name="noracsm" type="radio" value="both" class="inline">Entrambi
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cos'è per te la ragione?</legend>
+            <label for="ragione">
+                <select name="ragione" id="dropdown2">
+                    <option value="">(seleziona un'opzione)</option>
+                    <option value="1">Sapere quel che è giusto</option>
+                    <option value="2">Sapere quel che è sbagliato</option>
+                    <option value="3">Controbattere una discussione</option>
+                    <option value="4">Agire pensando</option>
+                    <option value="5">Senz'altro</option>
+                </select>
+            </label>
+            <legend>Quali tra queste etichette sono gravi a tuo parere?</legend>
+            <label for="sex">
+                <input value="mis" id="mis" type="checkbox" name="sex" class="inline"><label for="mis">Misoginia</label>
+                <input value="mon" id="mon" type="checkbox" name="sex" class="inline"><label for="mon" class="inline">Monogamia</label>
+                <input value="pol" id="pol" type="checkbox" name="sex" class="inline"><label for="pol" class="inline">Poligamia</label>
+                <input value="fig" id="fig" type="checkbox" name="sex" class="inline" checked><label for="fig" class="inline">misandria</label>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>(Commenta questo stupendo sondaggio :)</legend>
+            <label for="comments">
+                <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Questo magnifico sondaggio per me è stato...">
+                </textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Invia" />
+    </form>
+
+</body>
+</html>
